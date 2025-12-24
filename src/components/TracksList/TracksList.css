@@ -1,0 +1,23 @@
+.tracks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.reset-btn {
+  padding: 8px 16px;
+  background: #efefef;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.reset-btn:hover {
+  background: #e3e3e3;
+}

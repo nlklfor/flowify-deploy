@@ -1,57 +1,105 @@
-<!-- 🌊 FLOWIFY README -->
+# Flowify Deploy
 
-<h1 align="center">🎧 Flowify</h1>
+This repository is used for **deploying and testing the Flowify music application** using automated CI/CD with GitHub Actions and GitHub Pages.
 
-<p align="center">
-  <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="120" alt="music animation"/>
-</p>
-
-<p align="center">
-  <b>Flowify</b> — your personal world of music flow.  
-  Discover, listen, and create playlists that match your vibe 🎶  
-</p>
+⚠️ **Note:**  
+This is **not the main development repository** of Flowify.  
+It exists specifically to validate builds and handle deployment of the production-ready frontend.
 
 ---
 
-## 🌟 Overview
+## 🎶 About Flowify
 
-**Flowify** is a next-generation music streaming platform built with modern web technologies.  
-Create your own profile, explore trending playlists, and dive into music powered by emotion, rhythm, and connection.
+**Flowify** — your personal world of music flow.  
+Discover, listen, and create playlists that match your vibe 🎧
 
-💥 Features:
+Flowify is a next-generation music streaming platform built with modern web technologies, focused on personalization, performance, and emotional connection to music.
+
+### 🌟 Core Experience
+
+- Discover trending music & playlists
+- Create and manage personal playlists
+- Explore tracks, artists, and albums
+- Enjoy a smooth UI with dark & light mode
+- Personalized music experience built around your vibe
+
+---
+
+## 💥 Flowify Features
+
 - 🧑‍🎤 User profiles & personalized dashboards  
 - 🎵 Playlist creation & sharing  
 - 🔍 Smart search for tracks, albums & artists  
-- ❤️ Like, follow, and save your favorite songs  
-- 🌗 Dark / light mode  
+- ❤️ Like, follow, and save favorite songs  
+- 🌗 Dark / Light mode  
 - ⚙️ Built for scalability and speed  
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack (Main App)
 
 | Category | Technologies |
-|-----------|---------------|
-| **Frontend** | React / Next.js / TailwindCSS / Framer Motion |
-| **Backend** | Node.js / Express / Prisma / PostgreSQL |
-| **Auth** | JWT / OAuth 2.0 (Spotify, Google) |
-| **Storage** | AWS S3 / Cloudinary |
-| **Music API** | Spotify Web API / Deezer API |
-| **Deployment** | Vercel / Docker / Railway |
+|--------|-------------|
+| Frontend | React / Next.js / TailwindCSS / Framer Motion |
+| Backend | Node.js / Express / Prisma / PostgreSQL |
+| Auth | JWT / OAuth 2.0 (Spotify, Google) |
+| Storage | AWS S3 / Cloudinary |
+| Music APIs | Spotify Web API / Deezer API |
+| Deployment | Vercel / Docker / Railway |
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Purpose of This Repository
 
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/flowify.git
+This repository is responsible for:
 
-# Move to project folder
-cd flowify
+- ✅ Building the Flowify frontend
+- 🧪 Testing production builds
+- 🌐 Deploying the app via **GitHub Pages**
+- 🔁 Automatically redeploying on pushes to `main`
 
-# Install dependencies
-npm install
+Deployment is handled using **GitHub Actions**.
 
-# Run the app
-npm run dev
+---
+
+## 🌍 Live Deployment
+
+🔗 **Flowify (Deployment Preview):**  
+https://nlklfor.github.io/flowify-deploy/
+
+*(This deployment is for testing and preview purposes.)*
+
+---
+
+## 🔄 Deployment Workflow
+
+On every push to the `main` branch:
+
+1. Dependencies are installed
+2. The app is built (`npm run build`)
+3. The `dist` folder is uploaded
+4. GitHub Pages publishes the site automatically
+
+---
+
+## 📌 Main Application Repository
+
+👉 **Flowify (Main App Source Code):**  
+https://github.com/yourusername/flowify  
+*(Replace with the actual repository link if different.)*
+
+---
+
+## 🧠 Notes
+
+- This repo may contain deployment-specific configs only
+- No backend services are deployed from here
+- Used primarily for CI/CD validation and preview builds
+
+---
+
+## 📫 Contact
+
+If you have questions about Flowify or its deployment setup, feel free to open an issue.
+
+🎶 Built with passion for music & clean code

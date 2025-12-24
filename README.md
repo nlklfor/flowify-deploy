@@ -85,7 +85,7 @@ On every push to the `main` branch:
 ## 📌 Main Application Repository
 
 👉 **Flowify (Main App Source Code):**  
-https://nlklfor.github.io/flowify/
+https://github.com/nlklfor/flowify.git
 
 ---
 
